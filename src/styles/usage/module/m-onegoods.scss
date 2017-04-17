@@ -1,0 +1,164 @@
+.oneGoodsBox{
+            @include flexbox();
+        @include flex-direction(column);
+         width:100%;
+        height:100%;
+        position: absolute;
+   .comment{
+            position: relative;
+              overflow-y:scroll;
+                @include flexbox();
+        @include flex-direction(column);
+         width:100%;
+        height:100%;
+      .header{
+          
+           width:100%;
+           height:.7rem;
+           ul{
+                @include flexbox();
+                @include justify-content(space-around);
+                   li{
+                       text-align: center;
+                       line-height: .7rem;
+                       &:first-child{
+                           
+                           font-size: .25rem;
+                           
+                       }
+                      &:last-child{
+                           font-size: .3rem;
+                           line-height:.5rem;
+                          
+                      } 
+                   }
+               
+               
+           }
+      
+          
+      }
+           #yin{
+              display: none;
+            .footer{
+                ul{
+                    float: right;
+                    background: #ccc;
+        width:100%;
+        height:.5rem;
+        color: #000;
+      
+             @include flexbox();
+                @include flex-wrap(wrap);
+                  @include justify-content(space-between);
+             li a{
+                 color: #000;
+                             @include flexbox();
+            @include flex-direction(column);
+            text-align: center;
+                 
+             }
+       }
+       }
+        
+        
+    }
+    .nav{
+        height:100%;
+        img{
+            width:100%;
+            
+        }
+        .nav-jie{
+            
+            p{
+                width:100%;
+                height:.50rem;
+                font-size: .18rem;
+                margin: .1rem .05rem;
+            }
+            h2{
+                width:100%;
+                 height:.30rem;
+                   font-size: .18rem;
+                   margin:0 .05rem;
+                   
+                color:red;
+                
+            }
+            ul{
+                width:100%;
+                 @include flexbox();
+                @include flex-wrap(wrap);
+                background: pink;
+                
+                li{
+                    height:.3rem;
+                    width:33%;
+                    text-align: center;
+                    line-height: .3rem;
+                    
+                }
+            }
+        }
+        
+    }
+    .count{
+                @include flexbox();
+        @include flex-direction(column);
+         width:100%;
+      ul{
+          background: #ccc;
+          li{
+                background: #fff;
+              height:.3rem;
+              width:100%;
+              margin: .05rem 0;
+          
+              
+          }
+          
+          
+      }
+        
+    }
+    }
+    .goodfooter{
+         height:.5rem;
+          width:100%;
+        ul{
+       
+          
+        @include flexbox();
+         @include flex-wrap(wrap);
+         li{ 
+             height:.5rem;
+             text-align:center;
+             line-height: .5rem;
+             &:first-child{
+                 width:20%;
+                
+                 
+             }
+               &:nth-child(2){
+                 width:20%;
+                 
+                 
+             }
+             &:nth-child(3){
+                    width:30%;
+                 background:orange;
+                 color: #fff;
+                 
+             }
+             &:last-child{
+                    width:30%;
+                 background:red;
+                  color: #fff;
+                 
+             }
+         }
+         }
+        
+    }
+}

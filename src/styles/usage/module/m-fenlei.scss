@@ -1,0 +1,228 @@
+@font-face{
+       font-family: iconfont;
+       src:url("/images/iconfont/iconfont.woff") format("woff"),
+       url("/images/iconfont/iconfont.ttf") format("truetype");
+    
+}
+.iconfont{
+    font-family:iconfont;
+    
+}
+   .m-fenlei {
+ 
+       position: absolute;
+      width:100%;
+      height:100%;
+
+      .header{
+         height:.5rem;
+         background:#000000;
+        ul{
+            height:100%;
+     @include flexbox();
+    
+         @include justify-content(space-around);
+       
+        width:100%;
+      
+        li{
+            
+            
+            input{
+                height:.3rem;
+                width:2rem;
+                line-height:.5rem ;
+                border-radius: .1rem .1rem .1rem .1rem;
+                text-align: center;
+            }
+           
+            &:first-child i{
+                  height:.45rem;
+                  width:.5rem;
+                display: inline-block;
+                font-size:.2rem;
+          
+background: url("/images/white_dd-logo.png") no-repeat center;
+            
+             
+            }
+                        &:last-child i{
+                  height:.45rem;
+                  width:.5rem;
+                display: inline-block;
+                font-size:.2rem;
+          
+  background: url("/images/feilei-8-2.png");
+            
+             
+            }
+           
+         
+            
+        }
+     
+        
+        
+    }
+
+    }
+    
+        #yin{
+              display: none;
+            .footer{
+                ul{
+                    float: right;
+        width:70%;
+        height:.5rem;
+        color: #000;
+      
+             @include flexbox();
+                @include flex-wrap(wrap);
+                  @include justify-content(space-between);
+             li a{
+                 color: #000;
+                             @include flexbox();
+            @include flex-direction(column);
+            text-align: center;
+                 
+             }
+       }
+       }
+        
+        
+    }
+  
+    .fen-left{
+        
+                position: fixed;
+                left:0;
+                top:.5rem;
+                height:100%;
+                width:20%;
+             float: left;
+         
+            ul{
+              
+                li{
+                       width:.8rem;
+                     height:.3rem;
+                     color: red;
+                     background:#ccc;
+                     line-height: .3rem;
+                     text-align: center;
+                   
+                  a{
+                        color: red;
+                      
+                      
+                  }
+                    
+                }
+                  .active{
+                        background: #fff;
+                        
+                        
+                    }
+                
+            }
+        
+        
+    } 
+    .fen1{
+        float:right;
+           position: relative;
+           overflow: scroll;
+             height:100%;
+         width:80%;
+       .fenNav{
+           img{
+               width:100%;
+               
+           }
+           
+           
+       }
+       .pin{
+             h3{
+                 text-indent: .1rem;
+                 padding: .1rem 0;
+                 
+             }
+            @include flexbox();
+            @include flex-direction(column);
+           ul{
+               @include flexbox();
+                @include justify-content(space-around);
+                li{
+                    
+                     @include flexbox();
+            @include flex-direction(column);
+            text-align: center;
+                    
+                }
+    
+
+           
+           }
+       }
+        
+        .shang{
+               @include flexbox();
+            @include flex-direction(column);
+            width:100%;
+            height:100%;
+               h3{
+                    padding: .1rem 0;
+                    text-indent: .1rem;
+                    
+                }
+            ul{
+                   @include flexbox();
+                @include flex-wrap(wrap);
+             
+                li{
+                    width:33%;
+                    
+                    img{
+                        width:100%;
+                        
+                    }
+                }
+                
+                
+            }
+            
+            
+        }
+        
+        
+    }
+      .fen2{
+        float:right;
+           position: relative;
+           overflow: scroll;
+             height:100%;
+         width:80%;
+      
+       
+        
+        
+        
+        
+    }
+      .fen3{
+        float:right;
+           position: relative;
+           overflow: scroll;
+             height:100%;
+         width:80%;
+      
+       
+        
+        
+        
+        
+    }
+   
+    
+}
